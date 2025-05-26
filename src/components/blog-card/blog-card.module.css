@@ -1,0 +1,59 @@
+@import "../../global.css";
+
+.blog_card_container {
+  width: 100%;
+  .image_container {
+    padding: 15px;
+    margin: auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      margin-bottom: -40px;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+  .body_container {
+    padding: 15px;
+    padding-top: 30px;
+    border: 1px solid var(--orange-color);
+    border-radius: 0 0 8px 8px;
+    .by_comment_container {
+      display: flex;
+      gap: 10px;
+      .card {
+        gap: 3px;
+        display: flex;
+        align-items: center;
+        border: 0.5px solid #bbbbbb;
+        padding: 4px 6px;
+
+        img {
+        }
+        .text_admin,
+        .text_comment {
+          font-size: 10px;
+          font-weight: 400;
+        }
+      }
+    }
+    .title {
+      font-weight: 500;
+      font-size: var(--font-size-medium);
+      margin-top: 15px;
+    }
+    .read_share_container {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      .share_button {
+        border: 0.5px solid #bbbbbb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 10px;
+      }
+    }
+  }
+}

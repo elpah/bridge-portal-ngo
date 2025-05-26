@@ -1,0 +1,16 @@
+:root {
+  /* --dark-color-hover: #5a5a5a;
+  --gray-color: #eaeeed; */
+  --dark-color: #363636;
+  --dark-gray: #bbbbbb;
+
+  --background-color: rgb(249, 249, 249);
+  --orange-color: #ff7d10;
+  --green-color: #46af3f;
+
+  --font-size-large: 18px;
+  --font-size-small: 12px;
+  --font-size-medium: 14px;
+
+  --border-bottom: 0.1px solid var(--dark-gray);
+}

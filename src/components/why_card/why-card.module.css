@@ -1,0 +1,88 @@
+@import "../../global.css";
+.why_card_container {
+  padding: 16px;
+  border: 0.5px solid #bbbbbb;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  .header_arrow_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    .arrow {
+      transition: all 0.2s ease;
+    }
+
+    h2 {
+      font-weight: 600;
+    }
+  }
+
+  .para_container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease, padding 0.2s ease;
+    padding: 0;
+    p {
+      font-size: 12px;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  &:hover {
+    .header_arrow_icon {
+      color: var(--orange-color);
+      .arrow {
+        transform: rotate(90deg);
+      }
+    }
+    .para_container {
+      max-height: 200px;
+      padding-top: 5px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .why_card_container {
+    padding: 18px;
+
+    .header_arrow_icon {
+      font-size: 20px;
+    }
+
+    .para_container {
+      p {
+        font-size: 16px;
+        line-height: 1.7;
+      }
+    }
+
+    &:hover {
+      .para_container {
+        padding-top: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .why_card_container {
+    padding: 18px;
+
+    .header_arrow_icon {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    .para_container {
+      p {
+        line-height: 1.7;
+      }
+    }
+  }
+}

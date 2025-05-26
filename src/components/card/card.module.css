@@ -1,0 +1,41 @@
+@import "../../global.css";
+
+.card_container {
+  border: 0.5px solid #bbbbbb;
+  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  .card_header {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .card_para {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+  .card_icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .card_container {
+    .card_header {
+      font-size: 18px;
+    }
+    .card_para {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}

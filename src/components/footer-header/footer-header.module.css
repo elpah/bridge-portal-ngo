@@ -1,0 +1,42 @@
+@import "../../global.css";
+
+.header_container {
+  margin-bottom: 20px;
+  .header {
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .bar_bottom_container {
+    display: flex;
+    gap: 5px;
+    div {
+      height: 2px;
+      background-color: var(--orange-color);
+    }
+    .short_bar {
+      width: 20px;
+    }
+    .long_bar {
+      width: 40px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header_container {
+    margin-bottom: 30px;
+    .header {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .header_container {
+    .header {
+      font-size: 16px;
+    }
+  }
+}
