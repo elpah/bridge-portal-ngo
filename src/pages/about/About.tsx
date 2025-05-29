@@ -54,7 +54,8 @@ const About = () => {
             disabilities and behavioral challenges by providing compassionate
             care and practical support. A group of passionate educators and
             therapists came together to create a safe, inclusive space where
-            children could thrive despite their challenges. What began as a
+            children could thrive despite their challenges.
+            <br/> <br/> What began as a
             small community initiative has grown into a trusted center offering
             therapy, education, and family support. Our dedicated team remains
             committed to helping children build resilience, independence, and

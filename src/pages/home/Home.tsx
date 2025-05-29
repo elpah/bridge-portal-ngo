@@ -4,6 +4,7 @@ import BlogCard from "../../components/blog-card/BlogCard";
 import Card from "../../components/card/Card";
 import TestimonialCard from "../../components/testimonial-card/TestimonialCard";
 import WhyCard from "../../components/why_card/WhyCard";
+import WhyUsSection from "../../components/why_use_section/WhyUsSection";
 import styles from "./home.module.css";
 
 const Home = () => {
@@ -63,30 +64,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className={styles.why_us}>
-          <div className={styles.why_us_sub_wrapper}>
-          <div className={styles.left}>
-            <div className={styles.image_container}>
-              <img src={why_us_image} alt="smiling Children Image" />
-            </div>
-          </div>
-          <div className={styles.right}>
-            <p className={styles.header}>Why Us</p>
-            <h2 className={styles.header_2}>Why Choose Bridge Bright Center</h2>
-            <p className={styles.paragraph}>
-              Our passionate team provides personalized care, therapy, and
-              educational support to help young minds thrive. We believe that
-              with the right guidance and a nurturing environment, every child
-              can build a brighter future.
-            </p>
-            <div className={styles.why_card_container}>
-              <WhyCard />
-              <WhyCard />
-              <WhyCard />
-            </div>
-          </div>
-          </div>
-        </section>
+        <WhyUsSection/>
         <section className={styles.testimonials}>
           <p className={styles.header}>Testimonials</p>
           <h2 className={styles.header_2}>Some Clients Feedback..</h2>

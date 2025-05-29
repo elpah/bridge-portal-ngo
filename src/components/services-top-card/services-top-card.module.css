@@ -1,0 +1,39 @@
+@import "../../global.css";
+.card_container {
+  .header {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .image_container {
+    margin-bottom: 15px;
+
+    border-radius: 16px;
+    width: 100%;
+    overflow: hidden;
+    max-height: 400px;
+    .card_image {
+      border-radius: 16px;
+
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .header_paragraph {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card_container {
+    .header {
+      margin-bottom: 16px;
+    }
+
+    .header_paragraph {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

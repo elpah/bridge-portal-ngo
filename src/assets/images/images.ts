@@ -24,11 +24,11 @@ import about_us_group_image from "./about_us_group_image.png";
 import why_us_image from "./why_us_image.png";
 import about_cover_mobile from "./cover_images/about_cover_mobile.png";
 import about_cover_desktop from "./cover_images/about_cover_desktop.png";
-
 import about_image_frame from "./about_image_frame.png";
 import star_image from "./star_image.png";
 import vision_image_mobile from "./vision_image_mobile.png";
 import team_card_img_placeholder from "./team_card_img_placeholder.png";
+import services_top_img_placeholder from "./services_top_img_placeholder.png";
 export {
   x,
   yt,
@@ -60,4 +60,5 @@ export {
   star_image,
   vision_image_mobile,
   team_card_img_placeholder,
+  services_top_img_placeholder,
 };
