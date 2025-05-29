@@ -498,13 +498,13 @@
         }
       }
     }
-    .body_wrapper{
-      .why_us{
-        .why_us_sub_wrapper{
-          .left{
+    .body_wrapper {
+      .why_us {
+        .why_us_sub_wrapper {
+          .left {
             width: 40%;
           }
-          .right{
+          .right {
             width: 55%;
           }
         }
@@ -642,8 +642,6 @@
     }
   }
 }
-
-
 
 /* @media (min-width: 1800px) {
   .why_us_sub_wrapper{

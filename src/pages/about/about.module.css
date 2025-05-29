@@ -2,16 +2,18 @@
 
 .about_container {
   padding-top: 100px;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
 
   .header_cover_container {
-    width: 90%;
     margin: auto;
-    .about_header {
+    .about_header,
+    about_header_1 {
       font-weight: 800;
       font-size: 18px;
       color: var(--dark-color);
-	  margin: 0;
+      margin: 0;
     }
     .cover_image {
       width: 100%;
@@ -21,7 +23,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 90%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -45,6 +46,9 @@
       }
     }
     .about_card {
+      display:flex ;
+      flex-direction: column;
+      justify-content: center;
       color: #fff;
       background-color: var(--orange-color);
       padding: 15px;
@@ -56,22 +60,360 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 7px;
+        gap: 10px;
         .card_head {
           font-size: 16px;
           font-weight: 600;
         }
         .star_image {
-          width: 35px;
-          height: 35px;
+          width: 32px;
+          height: 32px;
         }
       }
       .about_us_text {
         font-size: 13px;
       }
     }
-    .bottom_optional_img {
+    .bottom_optional_img2 {
       width: 100%;
+    }
+  }
+  .vision_mission_container_wrapper {
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .vision_mission_container {
+      flex-direction: column;
+      gap: 20px;
+      display: flex;
+    }
+    .image_container {
+      .vision_image {
+        width: 100%;
+      }
+    }
+  }
+  .our_team_section {
+    margin: auto;
+    .our_team_header {
+      color: var(--green-color);
+      font-size: var(--font-size-small);
+      font-weight: 600;
+    }
+    .our_team_header2 {
+      font-size: var(--font-size-large);
+      color: var(--dark-color);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .our_team_card_container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .about_container {
+    padding-top: 120px;
+
+    .header_cover_container {
+      .about_header,
+      .about_header_1 {
+        font-size: 20px;
+      }
+      .about_header_1 {
+        margin-bottom: 5px;
+      }
+      .cover_image {
+        margin-top: -25px;
+      }
+    }
+    .about_info_container {
+      .about_info {
+        gap: 25px;
+        .quote {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      .about_card {
+        .star_header_container {
+          .card_head {
+            font-size: 18px;
+          }
+          .star_image {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+    .vision_mission_container_wrapper {
+      .image_container {
+        height: 300px;
+        overflow: hidden;
+        border-radius: 18px;
+
+        .vision_image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about_container {
+    padding-top: 130px;
+
+    .header_cover_container {
+      .about_header,
+      .about_header_1 {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .cover_image {
+        margin-top: -40px;
+      }
+    }
+    .about_info_container {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      flex-direction: row;
+      .about_info {
+        justify-content: space-between;
+        width: 49%;
+        .quote {
+          width: 35px;
+          height: 35px;
+        }
+        .text {
+          /* font-size: 13px; */
+        }
+        .bottom_optional_img {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      .about_card {
+        box-sizing: border-box;
+        width: 49%;
+      }
+      .bottom_optional_img2 {
+        display: none;
+      }
+    }
+    .vision_mission_container_wrapper {
+      margin-bottom: 60px;
+      .vision_mission_container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .image_container {
+        height: 250px;
+      }
+    }
+    .our_team_section {
+      .our_team_header {
+        font-size: 16px;
+      }
+      .our_team_header2 {
+        width: 60%;
+        font-size: 28px;
+        margin-bottom: 25px;
+      }
+      .our_team_card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about_container {
+    padding-top: 130px;
+
+    .header_cover_container {
+      .about_header,
+      .about_header_1 {
+        font-size: 40px;
+      }
+      .about_header_1 {
+        margin-bottom: 10px;
+      }
+      .cover_image {
+        margin-top: -50px;
+      }
+    }
+    .about_info_container {
+      margin-top: 60px;
+      margin-bottom: 50px;
+      .about_info {
+        width: 58%;
+        .quote {
+          width: 40px;
+          height: 40px;
+        }
+        .text {
+          font-size: 16px;
+        }
+      }
+      .about_card {
+        width: 40%;
+        .star_header_container {
+          gap: 15px;
+          .card_head {
+            font-size: 18px;
+            font-weight: 800;
+          }
+          .star_image {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .about_us_text {
+          font-size: 14px;
+        }
+      }
+    }
+    .vision_mission_container_wrapper {
+      flex-direction: row;
+      margin-bottom: 60px;
+      .vision_mission_container {
+        width: 73%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .image_container {
+        width: 25%;
+        height: auto;
+      }
+    }
+    .our_team_section {
+      margin-bottom: 40px;
+
+      .our_team_header2 {
+        width: 60%;
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+      .our_team_card_container {
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about_container {
+    padding-top: 130px;
+
+    .header_cover_container {
+      .about_header,
+      .about_header_1 {
+        font-size: 48px;
+      }
+      .about_header_1 {
+        margin-bottom: 5px;
+      }
+      .cover_image {
+        margin-top: -30px;
+      }
+    }
+    .about_info_container {
+      margin-top: 100px;
+      margin-bottom: 80px;
+      .about_info {
+        width: 60%;
+        .quote {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .about_card {
+        width: 38%;
+        padding: 25px;
+        border-radius: 16px;
+        .star_header_container {
+          margin-bottom: 10px;
+
+          .star_image {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+    }
+    .vision_mission_container_wrapper {
+      .vision_mission_container {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .image_container {
+        width: 25%;
+      }
+    }
+    .our_team_section {
+      .our_team_card_container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .about_container {
+    max-width: 1800px;
+    .header_cover_container {
+      .about_header,
+      .about_header_1 {
+        font-size: 50px;
+      }
+      .about_header_1 {
+        margin-bottom: 0px;
+      }
+      .cover_image {
+        margin-top: -40px;
+      }
+    }
+    .about_info_container {
+      margin-top: 80px;
+      .about_info {
+        width: 65%;
+        .quote {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .about_card {
+        width: 34%;
+      }
+    }
+    .vision_mission_container_wrapper {
+      max-height: 500px;
+    }
+    .our_team_section {
+      .our_team_header {
+        font-size: 18px;
+      }
+      .our_team_header2 {
+        margin-bottom: 32px;
+      }
+      .our_team_card_container {
+        gap: 25px;
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
   }
 }

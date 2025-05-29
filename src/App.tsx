@@ -12,7 +12,6 @@ import Gallery from "./pages/gallery/Gallery";
 import Testimonial from "./pages/testimonial/Testimonial";
 
 function App() {
-
   return (
     <>
       <Navbar />
@@ -29,7 +28,6 @@ function App() {
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </Suspense>
-
       <Footer />
     </>
   );

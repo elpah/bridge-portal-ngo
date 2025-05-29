@@ -1,22 +1,25 @@
 import {
+  about_cover_desktop,
   about_cover_mobile,
   about_image_frame,
   quote_icon,
   star_image,
+  vision_image_mobile,
 } from "../../assets/images/images";
 import AboutVisionCard from "../../components/about-vision-card/AboutVisionCard";
+import TeamCard from "../../components/team-card/TeamCard";
 import styles from "./about.module.css";
 
 const About = () => {
   return (
     <div className={styles.about_container}>
       <div className={styles.header_cover_container}>
-        <h2 className={styles.about_header}>Our Story, Vision, </h2>
+        <h2 className={styles.about_header_1}>Our Story, Vision, </h2>
         <h2 className={styles.about_header}>and Values.</h2>
 
         <img
           className={styles.cover_image}
-          src={about_cover_mobile}
+          src={about_cover_desktop}
           alt="about cover photo"
         />
       </div>
@@ -59,16 +62,41 @@ const About = () => {
           </p>
         </div>
         <img
-          className={styles.bottom_optional_img}
+          className={styles.bottom_optional_img2}
           src={about_image_frame}
           alt="place holder image"
         />
       </div>
-	  <div className={styles.vision_mission_container}>
-		<AboutVisionCard/>
-				<AboutVisionCard/>
+      <div className={styles.vision_mission_container_wrapper}>
+        <div className={styles.vision_mission_container}>
+          <AboutVisionCard />
+          <AboutVisionCard />
+        </div>
+        <div className={styles.image_container}>
+          <img
+            className={styles.vision_image}
+            src={vision_image_mobile}
+            alt="Vision Image"
+          />
+        </div>
+      </div>
+      <section className={styles.our_team_section}>
+        <p className={styles.our_team_header}>Our Team</p>
+        <h2 className={styles.our_team_header2}>
+          A Dedicated Team, Empowering Young Minds.
+        </h2>
+        <div className={styles.our_team_card_container}>
+                   <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
 
-	  </div>
+        </div>
+      </section>
     </div>
   );
 };

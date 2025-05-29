@@ -1,0 +1,53 @@
+@import "../../global.css";
+
+.card_container {
+
+  width: 100%;
+  box-sizing: border-box;
+  border: 0.5px solid #bbbbbb;
+  padding: 15px;
+  border-radius: 16px;
+  .header_icon_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header {
+      color: var(--dark-color);
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .star_icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .paragraph {
+    color: var(--dark-color);
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card_container {
+    padding: 20px;
+    .header_icon_container {
+      .header {
+        font-size: 18px;
+        font-weight: 800;
+      }
+      .star_icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .paragraph {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+  }
+}
