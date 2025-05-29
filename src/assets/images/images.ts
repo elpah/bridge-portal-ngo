@@ -29,6 +29,15 @@ import star_image from "./star_image.png";
 import vision_image_mobile from "./vision_image_mobile.png";
 import team_card_img_placeholder from "./team_card_img_placeholder.png";
 import services_top_img_placeholder from "./services_top_img_placeholder.png";
+import service_image_placeholder_mobile from "./service_image_placeholder_mobile.png";
+import service_image_placeholder_tablet from "./service_image_placeholder_tablet.png";
+import service_image_placeholder_desktop from "./service_image_placeholder_desktop.png";
+import prefooter_image from "./prefooter_image.png"
+import prefooter_image_desktop from "./prefooter_image_desktop.png"
+
+
+
+
 export {
   x,
   yt,
@@ -61,4 +70,9 @@ export {
   vision_image_mobile,
   team_card_img_placeholder,
   services_top_img_placeholder,
+  service_image_placeholder_mobile,
+  service_image_placeholder_tablet,
+  service_image_placeholder_desktop,
+  prefooter_image,
+  prefooter_image_desktop,
 };

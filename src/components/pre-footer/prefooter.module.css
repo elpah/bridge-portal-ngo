@@ -1,0 +1,84 @@
+@import "../../global.css";
+
+.prefooter_container {
+  background: url("../../assets/images/prefooter_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 20px;
+
+  padding: 20px;
+  .para {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+  }
+  .button_container {
+    display: flex;
+    gap: 10px;
+    button {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 10px;
+    }
+    .consult {
+      background-color: var(--green-color);
+    }
+    .contact {
+      background-color: var(--orange-color);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .prefooter_container {
+    background: url("../../assets/images/prefooter_image_desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+
+    gap: 35px;
+    .para {
+      font-size: 20px;
+      width: 400px;
+    }
+    .button_container {
+      button {
+        font-size: 14px;
+        padding: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .prefooter_container {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .prefooter_container {
+    height: 300px;
+
+    .para {
+      font-size: 25px;
+      width: 650px;
+    }
+    .button_container {
+      gap: 12px;
+      button {
+        font-size: 18px;
+        padding: 14px;
+      }
+    }
+  }
+}

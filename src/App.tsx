@@ -10,6 +10,7 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import Gallery from "./pages/gallery/Gallery";
 import Testimonial from "./pages/testimonial/Testimonial";
+import ServicesDetails from "./pages/services-details/ServicesDetails";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+                    <Route path="/service-details" element={<ServicesDetails />} />
+
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/testimonial" element={<Testimonial />} />

@@ -1,0 +1,136 @@
+@import "../../global.css";
+.services_details_container {
+  width: 100%;
+  padding-top: 120px;
+
+  .services_details_container_wrapper {
+    width: 90%;
+    margin: auto;
+    .image_container {
+      max-height: 300px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 18px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .service_image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .header_paragraph {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 14px;
+      color: var(--dark-color);
+    }
+    .details_body {
+      .section_header {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .section_paragraph {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+      .list_container {
+        padding-left: 1.5rem;
+
+        li {
+          margin-bottom: 20px;
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services_details_container {
+    .services_details_container_wrapper {
+		.image_container{
+			max-height: 400px;
+		}
+      .details_body {
+        max-width: 700px;
+        margin: auto;
+        .header_paragraph {
+          line-height: 1.8;
+          font-weight: 400;
+        }
+        .section_header {
+        }
+        .section_paragraph {
+          line-height: 1.8;
+          font-weight: 400;
+        }
+        .list_container {
+          li {
+            line-height: 1.8;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @import "../../global.css";
+  .services_details_container {
+    .services_details_container_wrapper {
+		.image_container{max-height: 500px;
+
+		}
+      .details_body {
+        margin-top: 70px;
+        .header_paragraph {
+          font-size: 16px;
+        }
+        .section_header {
+          font-size: 20px;
+        }
+        .section_paragraph {
+          font-size: 16px;
+        }
+        .list_container {
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  @import "../../global.css";
+  .services_details_container {
+    .services_details_container_wrapper {
+		margin-bottom: 100px;
+      .details_body {        max-width: 900px;
+
+        .header_paragraph {
+          font-size: 18px;
+        }
+        .section_header {
+          font-size: 22px;
+        }
+        .section_paragraph {
+          font-size: 16px;
+        }
+        .list_container {
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
