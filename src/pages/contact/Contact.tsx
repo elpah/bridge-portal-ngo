@@ -86,8 +86,6 @@ const Contact = () => {
               <iframe
                 className={styles.map}
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.09923832903!2d4.763386815992099!3d52.3545827915705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c61c8fd75cbefb%3A0xbf07a9e582e6a2df!2sStationstraat%2071%2C%201506%20DE%2C%20Zaandam%2C%20Netherlands!5e0!3m2!1sen!2s!4v1717042257647"
-                // width="600"
-                // height="450"
                 loading="lazy"
               ></iframe>
             </div>
@@ -108,7 +106,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className={styles.faq_container}></section>
     </div>
   );
 };
