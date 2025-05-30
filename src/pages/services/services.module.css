@@ -99,7 +99,6 @@
 
 @media (min-width: 1024px) {
   .services_container {
-    padding-top: 120px;
     .services_sub_container {
       .services_header_container {
         .header {
@@ -128,7 +127,6 @@
 
 @media (min-width: 1200px) {
   .services_container {
-    padding-top: 120px;
     .services_sub_container {
       .services_header_container {
         .header {
@@ -157,7 +155,13 @@
     .services_sub_container {
       max-width: 1800px;
       .services_header_container {
+        .header {
+          width: 60%;
+          font-size: 45px;
+          font-weight: 900;
+        }
         .header_paragraph {
+          width: 70%;
           font-weight: 400;
         }
       }

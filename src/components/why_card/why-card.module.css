@@ -53,6 +53,9 @@
 
     .header_arrow_icon {
       font-size: 20px;
+      h2 {
+        font-weight: 500;
+      }
     }
 
     .para_container {
