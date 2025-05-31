@@ -1,18 +1,19 @@
 @import "../../global.css";
 
 .card_container {
+  color: var(--dark-color);
   border: 0.5px solid #bbbbbb;
   position: relative;
-  padding: 15px;
-  border-radius: 8px;
-  height: 200px;
+  padding: 15px 20px;
+  border-radius: 16px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   justify-content: center;
   .card_header {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
   }
   .card_para {
     font-size: 14px;
@@ -28,14 +29,11 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .card_container {
-    .card_header {
-      font-size: 18px;
-    }
+
     .card_para {
-      font-size: 15px;
-      font-weight: 400;
+      font-size: 16px;
     }
   }
 }

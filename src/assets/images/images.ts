@@ -34,6 +34,7 @@ import service_image_placeholder_tablet from "./service_image_placeholder_tablet
 import service_image_placeholder_desktop from "./service_image_placeholder_desktop.png";
 import prefooter_image from "./prefooter_image.png"
 import prefooter_image_desktop from "./prefooter_image_desktop.png"
+import gallery_image_placeholder from "./gallery_image_placeholder.png"
 
 
 
@@ -75,4 +76,5 @@ export {
   service_image_placeholder_desktop,
   prefooter_image,
   prefooter_image_desktop,
+  gallery_image_placeholder,
 };

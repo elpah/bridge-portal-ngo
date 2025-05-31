@@ -1,7 +1,7 @@
 @import "../../global.css";
 .services_container {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 20px;
   .services_sub_container {
     width: 90%;
     margin: auto;
@@ -57,9 +57,8 @@
 
 @media (min-width: 768px) {
   .services_container {
-    padding-top: 120px;
+    padding-top: 50px;
     .services_sub_container {
-      /* margin: auto; */
       .services_header_container {
         .header {
           font-size: 32px;
@@ -99,6 +98,7 @@
 
 @media (min-width: 1024px) {
   .services_container {
+    padding-top: 100px;
     .services_sub_container {
       .services_header_container {
         .header {
@@ -151,7 +151,6 @@
 
 @media (min-width: 1400px) {
   .services_container {
-    padding-top: 140px;
     .services_sub_container {
       max-width: 1800px;
       .services_header_container {
@@ -164,8 +163,6 @@
           width: 70%;
           font-weight: 400;
         }
-      }
-      .top_card_container {
       }
       .our_services {
         .services_header_star {

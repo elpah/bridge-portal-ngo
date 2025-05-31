@@ -12,6 +12,18 @@ const WhyCard = () => {
         <p>
           We tailor our care plans to each child's unique needs, ensuring they
           receive the right support to thrive.
+           We tailor our care plans to each child's unique needs, ensuring they
+          receive the right support to thrive.
+           We tailor our care plans to each child's unique needs, ensuring they
+          receive the right support to thrive.
+           We tailor our care plans to each child's unique needs, ensuring they
+          receive the right support to thrive.
+           We tailor our care plans to each child's unique needs, ensuring they
+          receive the right support to thrive.
+           We tailor our care plans to each child's unique needs, ensuring they
+          receive the right support to thrive.
+           We tailor our care plans to each child's unique needs, ensuring they
+          receive the right support to thrive.
         </p>
       </div>
     </div>

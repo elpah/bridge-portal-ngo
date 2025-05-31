@@ -1,7 +1,7 @@
 @import "../../global.css";
 
 .about_container {
-  padding-top: 100px;
+  padding-top: 20px;
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
@@ -38,11 +38,11 @@
       }
       .text {
         color: var(--dark-color);
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: 300;
       }
       .bottom_optional_img {
         display: none;
-        /* width: 100%; */
       }
     }
     .about_card {
@@ -71,7 +71,8 @@
         }
       }
       .about_us_text {
-        font-size: 13px;
+        font-weight: 300;
+        font-size: 14px;
       }
     }
     .bottom_optional_img2 {
@@ -119,8 +120,6 @@
 
 @media (min-width: 500px) {
   .about_container {
-    padding-top: 120px;
-
     .header_cover_container {
       .about_header,
       .about_header_1 {
@@ -172,7 +171,7 @@
 
 @media (min-width: 768px) {
   .about_container {
-    padding-top: 130px;
+    padding-top: 50px;
 
     .header_cover_container {
       .about_header,
@@ -194,9 +193,6 @@
         .quote {
           width: 35px;
           height: 35px;
-        }
-        .text {
-          /* font-size: 13px; */
         }
         .bottom_optional_img {
           display: inline-block;
@@ -240,7 +236,7 @@
 
 @media (min-width: 1024px) {
   .about_container {
-    padding-top: 130px;
+      padding-top: 100px;
 
     .header_cover_container {
       .about_header,
@@ -316,8 +312,6 @@
 
 @media (min-width: 1200px) {
   .about_container {
-    padding-top: 130px;
-
     .header_cover_container {
       .about_header,
       .about_header_1 {

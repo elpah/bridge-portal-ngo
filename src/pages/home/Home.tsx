@@ -1,9 +1,8 @@
-import { about_us_group_image, why_us_image } from "../../assets/images/images";
+import { about_us_group_image } from "../../assets/images/images";
 import AboutCard from "../../components/about-card/AboutCard";
 import BlogCard from "../../components/blog-card/BlogCard";
 import Card from "../../components/card/Card";
 import TestimonialCard from "../../components/testimonial-card/TestimonialCard";
-import WhyCard from "../../components/why_card/WhyCard";
 import WhyUsSection from "../../components/why_use_section/WhyUsSection";
 import styles from "./home.module.css";
 

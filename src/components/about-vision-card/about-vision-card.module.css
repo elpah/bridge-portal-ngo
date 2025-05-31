@@ -24,8 +24,7 @@
   .paragraph {
     color: var(--dark-color);
     margin-top: 20px;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 14px;
     font-weight: 300;
   }
 }
@@ -45,9 +44,7 @@
     }
     .paragraph {
       margin-top: 20px;
-      font-size: 14px;
       line-height: 1.6;
-      font-weight: 400;
     }
   }
 }

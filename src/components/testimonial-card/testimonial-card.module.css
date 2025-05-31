@@ -1,7 +1,7 @@
 @import "../../global.css";
 
 .test_card_container {
-	position: relative;
+  position: relative;
   color: var(--dark-color);
   width: 100%;
   border: 1px solid var(--dark-gray);
@@ -37,22 +37,48 @@
     }
   }
   .testimony_container {
-	margin-bottom: 10px;
+    margin-bottom: 1px;
     .testimony {
-      font-size: var(--font-size-small);
+      line-height: 1.8;
+      font-weight: 300;
+      font-size: 14px;
     }
   }
-  .stars_container{
-	display: flex;
-	justify-content: flex-end;
-	gap: 3px;
-	color:var(--green-color);
+  .stars_container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+    color: var(--green-color);
   }
-  .quote_icon{
-	position: absolute;
-	width: 50px;
-	height: 60px;
-	top: 15px;
-	right: 15px;
+  .quote_icon {
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    top: 15px;
+    right: 15px;
+    color: #bbbbbb;
+  }
+  &:hover {
+    color: #fff;
+    background-color: var(--orange-color);
+
+    .stars_container {
+      color: #fff;
+    }
+    .quote_icon {
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .test_card_container {
+    padding: 25px;
+
+    .testimony_container {
+      .testimony {
+        /* font-size: 16px; */
+      }
+    }
   }
 }

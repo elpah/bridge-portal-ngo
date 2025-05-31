@@ -1,7 +1,7 @@
 @import "../../global.css";
 
 .gallery_container {
-  padding-top: 100px;
+  padding-top: 20px;
   .gallery_wrapper {
     width: 90%;
     margin: auto;
@@ -17,6 +17,7 @@
     }
   }
   .photos_section {
+    padding: 50px 0;
     width: 100%;
     background-color: #f2f2f2;
     .photos_container {
@@ -26,14 +27,20 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
 
-      img {
+      .image_container {
         width: 100%;
-        height: auto;
+        height: 150px;
         grid-column: span 1;
-
         &:nth-child(6n + 1),
         &:nth-child(6n + 6) {
           grid-column: span 2;
+        }
+        img {
+          border-radius: 8px;
+
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -42,15 +49,24 @@
 
 @media (min-width: 768px) {
   .gallery_container {
-    padding-top: 120px;
+    padding-top: 50px;
     .gallery_wrapper {
-      /* margin-bottom: 50px; */
+      margin-bottom: 50px;
       .gallery_header {
         font-size: 32px;
       }
       .header_paragraph {
         font-size: 16px;
-        /* font-weight: 300; */
+      }
+    }
+
+    .photos_section {
+      padding: 80px 0;
+      .photos_container {
+        .image_container {
+          width: 100%;
+          height: 200px;
+        }
       }
     }
   }
@@ -58,13 +74,24 @@
 
 @media (min-width: 1024px) {
   .gallery_container {
+    padding-top: 100px;
     .gallery_wrapper {
-      /* margin-bottom: 50px; */
+      margin-bottom: 80px;
+
       .gallery_header {
         width: 65%;
       }
       .header_paragraph {
         width: 70%;
+      }
+    }
+    .photos_section {
+      padding: 90px 0;
+      .photos_container {
+        .image_container {
+          width: 100%;
+          height: 220px;
+        }
       }
     }
   }
@@ -73,7 +100,6 @@
 @media (min-width: 1200px) {
   .gallery_container {
     .gallery_wrapper {
-      /* margin-bottom: 50px; */
       .gallery_header {
         width: 50%;
         font-size: 34px;
@@ -82,13 +108,21 @@
         width: 60%;
       }
     }
+    .photos_section {
+      .photos_container {
+        .image_container {
+          width: 100%;
+          height: 240px;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 1400px) {
   .gallery_container {
     .gallery_wrapper {
-      /* margin-bottom: 50px; */
+      margin-bottom: 100px;
       max-width: 1800px;
       .gallery_header {
         width: 60%;
@@ -98,6 +132,16 @@
       .header_paragraph {
         width: 70%;
         font-weight: 400;
+      }
+    }
+    .photos_section {
+      padding: 100px 0;
+      .photos_container {
+        max-width: 1800px;
+        .image_container {
+          width: 100%;
+          height: 350px;
+        }
       }
     }
   }

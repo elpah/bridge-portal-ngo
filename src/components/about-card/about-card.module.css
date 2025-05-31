@@ -11,7 +11,7 @@
     }
   }
   .header {
-    font-size: 16px;
+    font-size: 18px;
   }
   .paragraph {
     font-size: 14px;
@@ -35,4 +35,15 @@
       height: 35px;
     }
   }
+}
+
+
+@media(min-width:1400px)
+{
+  .card_container{
+    .paragraph{
+      font-size: 15px;
+    }
+  }
+
 }

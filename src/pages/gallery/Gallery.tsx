@@ -1,3 +1,4 @@
+import { gallery_image_placeholder } from "../../assets/images/images";
 import styles from "./gallery.module.css";
 
 const Gallery = () => {
@@ -16,8 +17,55 @@ const Gallery = () => {
         </p>
       </div>
       <section className={styles.photos_section}>
-        <div className={styles.photos_wrapper}>
-          
+        <div className={styles.photos_container}>
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>{" "}
+          <div className={styles.image_container}>
+            <img src={gallery_image_placeholder} alt="" />
+          </div>
         </div>
       </section>
     </div>

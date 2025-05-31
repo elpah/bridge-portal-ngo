@@ -1,7 +1,7 @@
 @import "../../global.css";
 
 .contact_container {
-  padding-top: 100px;
+  padding-top: 20px;
   width: 100%;
   .text_form_wrapper {
     width: 90%;
@@ -226,7 +226,7 @@
 
 @media (min-width: 768px) {
   .contact_container {
-    padding-top: 150px;
+    padding-top: 50px;
     .text_form_wrapper {
       margin-bottom: 60px;
       flex-direction: row;
@@ -316,7 +316,8 @@
 
 @media (min-width: 1024px) {
   .contact_container {
-    padding-top: 120px;
+          padding-top: 100px;
+
     .text_form_wrapper {
       margin-bottom: 80px;
 
@@ -396,7 +397,6 @@
 
 @media (min-width: 1200px) {
   .contact_container {
-    padding-top: 120px;
     .text_form_wrapper {
       margin-bottom: 80px;
 
@@ -481,7 +481,6 @@
 
 @media (min-width: 1400px) {
   .contact_container {
-    padding-top: 140px;
     .text_form_wrapper {
       max-width: 1800px;
       .text_information {
