@@ -2,7 +2,6 @@
 
 .desktop_header {
   display: none;
-
 }
 
 @media (min-width: 1024px) {
@@ -23,6 +22,7 @@
       margin: auto;
 
       .logo_container {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;

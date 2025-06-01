@@ -20,20 +20,30 @@
     }
   }
   .header_paragraph {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.7;
     font-weight: 300;
   }
 }
 
+@media (min-width: 768px) {
+.card_container {
+  .header {
+    font-size: 18px;
+   
+  }
+}
+}
+
+
 @media (min-width: 1200px) {
   .card_container {
     .header {
-      margin-bottom: 16px;
+      /* margin-bottom: 16px; */
     }
 
     .header_paragraph {
-      font-size: 14px;
-      font-weight: 400;
+      /* font-size: 14px; */
     }
   }
 }

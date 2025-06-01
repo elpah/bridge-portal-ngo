@@ -16,7 +16,6 @@ const About = () => {
       <div className={styles.header_cover_container}>
         <h2 className={styles.about_header_1}>Our Story, Vision, </h2>
         <h2 className={styles.about_header}>and Values.</h2>
-
         <img
           className={styles.cover_image}
           src={about_cover_desktop}
@@ -55,11 +54,11 @@ const About = () => {
             care and practical support. A group of passionate educators and
             therapists came together to create a safe, inclusive space where
             children could thrive despite their challenges.
-            <br/> <br/> What began as a
-            small community initiative has grown into a trusted center offering
-            therapy, education, and family support. Our dedicated team remains
-            committed to helping children build resilience, independence, and
-            brighter futures through personalized care and guidance.
+            <br /> <br /> What began as a small community initiative has grown
+            into a trusted center offering therapy, education, and family
+            support. Our dedicated team remains committed to helping children
+            build resilience, independence, and brighter futures through
+            personalized care and guidance.
           </p>
         </div>
         <img
@@ -87,7 +86,6 @@ const About = () => {
           A Dedicated Team, Empowering Young Minds.
         </h2>
         <div className={styles.our_team_card_container}>
-                   <TeamCard />
           <TeamCard />
           <TeamCard />
           <TeamCard />
@@ -95,7 +93,7 @@ const About = () => {
           <TeamCard />
           <TeamCard />
           <TeamCard />
-
+          <TeamCard />
         </div>
       </section>
     </div>

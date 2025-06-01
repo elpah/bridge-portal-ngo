@@ -1,14 +1,16 @@
-import { links } from '../../data/links'
-import DesktopNav from './nav-desktop/DesktopNav'
-import MobileNav from './nav-mobile/MobileNav'
+import { useNavigate } from "react-router-dom";
+import { links } from "../../data/links";
+import DesktopNav from "./nav-desktop/DesktopNav";
+import MobileNav from "./nav-mobile/MobileNav";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
-	<>
-	<MobileNav links={links}/>
-	<DesktopNav links={links}/>
-	</>
-  )
-}
+    <>
+      <MobileNav links={links} handleLogoClick={() => navigate("/")} />
+      <DesktopNav links={links} handleLogoClick={() => navigate("/")} />
+    </>
+  );
+};
 
-export default Navbar
+export default Navbar;

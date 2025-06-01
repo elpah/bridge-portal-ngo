@@ -5,17 +5,6 @@
   width: 90%;
   padding-top: 20px;
   margin: auto;
-
-  .header {
-    font-size: 25px;
-    font-weight: 900;
-    margin-bottom: 20px;
-  }
-  .header_paragraph {
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 40px;
-  }
   .testimonial_card_container {
     margin-bottom: 50px;
     display: grid;
@@ -26,12 +15,6 @@
 @media (min-width: 768px) {
   .testimonials_container {
     padding-top: 50px;
-    .header {
-      font-size: 30px;
-    }
-    .header_paragraph {
-      margin-bottom: 60px;
-    }
     .testimonial_card_container {
       grid-template-columns: repeat(2, 1fr);
       margin-bottom: 80px;
@@ -42,31 +25,8 @@
 @media (min-width: 1024px) {
   .testimonials_container {
     padding-top: 100px;
-
-    .header {
-      width: 65%;
-    }
-    .header_paragraph {
-      font-weight: 400;
-      width: 70%;
-    }
     .testimonial_card_container {
       grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonials_container {
-    .header {
-      font-size: 32px;
-      width: 50%;
-    }
-
-    .header_paragraph {
-      font-size: 16px;
-      font-weight: 400;
-      width: 60%;
     }
   }
 }
@@ -74,14 +34,5 @@
 @media (min-width: 1400px) {
   .testimonials_container {
     max-width: 1800px;
-    .header {
-      width: 60%;
-      font-size: 45px;
-      font-weight: 900;
-    }
-    .header_paragraph {
-      width: 70%;
-      font-size: 16px;
-    }
   }
 }

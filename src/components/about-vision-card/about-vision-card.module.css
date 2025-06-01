@@ -26,6 +26,7 @@
     margin-top: 20px;
     font-size: 14px;
     font-weight: 300;
+    line-height: 1.7;
   }
 }
 
@@ -34,7 +35,7 @@
     padding: 20px;
     .header_icon_container {
       .header {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 800;
       }
       .star_icon {
@@ -44,7 +45,7 @@
     }
     .paragraph {
       margin-top: 20px;
-      line-height: 1.6;
+      font-weight: 16px;
     }
   }
 }

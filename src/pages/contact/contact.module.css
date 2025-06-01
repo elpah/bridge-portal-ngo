@@ -13,17 +13,6 @@
 
     .text_information {
       color: var(--dark-color);
-      .header {
-        font-size: 25px;
-        font-weight: 900;
-        margin-bottom: 20px;
-      }
-
-      .header_paragraph {
-        font-size: 14px;
-        font-weight: 300;
-        margin-bottom: 20px;
-      }
       .email,
       .number {
         font-size: 15px;
@@ -39,6 +28,7 @@
           }
           .support_feedback_text {
             font-size: 14px;
+            line-height: 1.7;
             font-weight: 300;
             margin-top: 10px;
           }
@@ -55,12 +45,12 @@
         width: 100%;
         color: var(--dark-color);
         .form_header {
-          font-size: 25px;
+          font-size: 22px;
           font-weight: 500;
           margin-bottom: 5px;
         }
         .form_paragraph {
-          font-size: 15px;
+          font-size: 14px;
           font-weight: 400;
           margin-bottom: 20px;
         }
@@ -68,7 +58,6 @@
           width: 100%;
           display: flex;
           gap: 10px;
-          /* margin-bottom: 10px; */
           input {
             font-size: 14px;
             color: var(--dark-color);
@@ -258,7 +247,7 @@
           width: 100%;
 
           .form_paragraph {
-            font-size: 15px;
+            font-size: 14px;
           }
           .names_container {
             gap: 0px;
@@ -324,12 +313,9 @@
       .text_information {
         width: 48%;
 
-        .header_paragraph {
-          font-weight: 400;
-        }
         .email,
         .number {
-          font-weight: 700;
+          font-weight: 600;
         }
 
         .support_feedback_header {
@@ -403,17 +389,12 @@
       .text_information {
         width: 48%;
         .header {
-          font-size: 32px;
+          font-size: 30px;
         }
-
-        .header_paragraph {
-          font-size: 16px;
-          font-weight: 400;
-        }
-        .email,
+        /* .email,
         .number {
           font-weight: 700;
-        }
+        } */
 
         .support_feedback_container {
           .container {
@@ -484,13 +465,6 @@
     .text_form_wrapper {
       max-width: 1800px;
       .text_information {
-        .header {
-          font-size: 45px;
-          font-weight: 900;
-        }
-        .header_paragraph {
-          font-size: 16px;
-        }
         .email,
         .number {
           font-size: 18px;
@@ -505,8 +479,9 @@
               font-size: 22px;
             }
             .support_feedback_text {
-              font-weight: 400;
               font-size: 16px;
+
+
             }
           }
         }

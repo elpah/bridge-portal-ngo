@@ -9,15 +9,18 @@
   .header_cover_container {
     margin: auto;
     .about_header,
-    about_header_1 {
+    .about_header_1 {
       font-weight: 800;
       font-size: 18px;
       color: var(--dark-color);
       margin: 0;
     }
+
     .cover_image {
       width: 100%;
+      height: 100%;
     }
+    
   }
   .about_info_container {
     display: flex;

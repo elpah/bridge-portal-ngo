@@ -1,3 +1,4 @@
+import PageHeader from "../../components/page-header/PageHeader";
 import WhyCard from "../../components/why_card/WhyCard";
 import styles from "./contact.module.css";
 
@@ -6,12 +7,7 @@ const Contact = () => {
     <div className={styles.contact_container}>
       <div className={styles.text_form_wrapper}>
         <div className={styles.text_information}>
-          <h1 className={styles.header}>Contact Us</h1>
-          <p className={styles.header_paragraph}>
-            Whether you’re looking to learn more about our services, need
-            guidance on your child’s journey, or have suggestions to share, we’d
-            love to hear from you!
-          </p>
+          <PageHeader pageHead={"Contact Us"} pagePragraph={"Whether you’re looking to learn more about our services, need guidance on your child’s journey, or have suggestions to share, we’d love to hear from you!"}/>
           <p className={styles.email}>info@bridgebrightcenter.com</p>
           <p className={styles.number}>+31 000 000 000</p>
 

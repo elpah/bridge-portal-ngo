@@ -1,5 +1,5 @@
-import { FaPhone, FaEnvelope, FaTimes } from "react-icons/fa";
-import styles from "./mobile-nav.module.css";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
+import type { INavProps } from "../../types/navProps";
 import {
   logo,
   x,
@@ -10,13 +10,9 @@ import {
 } from "../../../assets/images/images";
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import type { Link } from "../../../data/links";
+import styles from "./mobile-nav.module.css";
 
-type INavProps = {
-  links: Link[];
-};
-
-const MobileNav = ({ links }: INavProps) => {
+const MobileNav = ({ links, handleLogoClick }: INavProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const isHomepage = location.pathname === "/";
@@ -30,8 +26,8 @@ const MobileNav = ({ links }: INavProps) => {
       >
         <nav>
           <div className={styles.logo_ham_wrapper}>
-            <div className={styles.logo_container}>
-              <img className={styles.logo_image} src={logo} alt="" />
+            <div className={styles.logo_container} onClick={handleLogoClick}>
+              <img className={styles.logo_image} src={logo} alt="Logo" />
             </div>
             <div
               onClick={() => setIsOpen(true)}
@@ -59,19 +55,12 @@ const MobileNav = ({ links }: INavProps) => {
 
             <ul>
               {links.map(({ label, to }) => (
-                <li key={to}>
+                <li onClick={() => setIsOpen(false)} key={to}>
                   <NavLink to={to} className={styles.nav_link}>
                     {label}
                   </NavLink>
                 </li>
               ))}
-              {/* <li>Home</li>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Contact Us</li>
-              <li>Gallery</li>
-              <li>Testimonial</li>
-              <li>Blog</li> */}
             </ul>
             <div className={styles.button_container}>
               <button>Get Support</button>

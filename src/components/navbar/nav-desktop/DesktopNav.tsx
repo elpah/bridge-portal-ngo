@@ -1,14 +1,10 @@
 import { NavLink, useLocation } from "react-router-dom";
-
-import type { Link } from "../../../data/links";
+import type { INavProps } from "../../types/navProps";
 import { logo } from "../../../assets/images/images";
 
 import styles from "./desktop-nav.module.css";
 
-type INavProps = {
-  links: Link[];
-};
-const DesktopNav = ({ links }: INavProps) => {
+const DesktopNav = ({ links, handleLogoClick }: INavProps) => {
   const location = useLocation();
   const isHomepage = location.pathname === "/";
   return (
@@ -18,7 +14,7 @@ const DesktopNav = ({ links }: INavProps) => {
       }`}
     >
       <nav>
-        <div className={styles.logo_container}>
+        <div className={styles.logo_container} onClick={handleLogoClick}>
           <img className={styles.logo} src={logo} alt="" />
         </div>
         <ul>

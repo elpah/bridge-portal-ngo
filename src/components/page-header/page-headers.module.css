@@ -1,0 +1,63 @@
+@import "../../global.css";
+
+.header_container {
+  margin-bottom: 40px;
+  color: var(--dark-color);
+  .header {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .header_paragraph {
+    font-size: 14px;
+    line-height: 1.7;
+
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_container {
+    .header {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header_container {
+    .header {
+      width: 65%;
+    }
+    .header_paragraph {
+      font-size: 16px;
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header_container {
+    .header {
+      width: 50%;
+      font-size: 34px;
+    }
+    .header_paragraph {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .header_container {
+    .header {
+      width: 60%;
+      font-size: 45px;
+      font-weight: 900;
+    }
+    .header_paragraph {
+      font-size: 16px;
+      width: 70%;
+    }
+  }
+}
