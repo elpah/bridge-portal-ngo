@@ -36,9 +36,6 @@ import prefooter_image from "./prefooter_image.png"
 import prefooter_image_desktop from "./prefooter_image_desktop.png"
 import gallery_image_placeholder from "./gallery_image_placeholder.png"
 
-
-
-
 export {
   x,
   yt,
