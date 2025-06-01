@@ -1,0 +1,53 @@
+@import "../../global.css";
+
+.header_container {
+  .header {
+    color: var(--green-color);
+    font-size: var(--font-size-small);
+    text-align: center;
+    font-weight: 600;
+  }
+  .header_2 {
+    font-size: 22px;
+    text-align: center;
+    color: var(--dark-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_container {
+    .header {
+      font-size: 16px;
+    }
+    .header_2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header_container {
+    .header {
+      /* font-size: 16px; */
+      margin-bottom: 0;
+    }
+    .header_2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header_container {
+    .header {
+      font-size: 18px;
+    }
+    .header_2 {
+      font-size: 32px;
+    }
+  }
+}

@@ -12,22 +12,9 @@
     }
     .our_services {
       .services_header_star {
-        margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .services_header {
-          p {
-            font-size: 12px;
-            color: var(--green-color);
-            font-weight: 600;
-          }
-          h2 {
-            color: var(--dark-color);
-            font-size: 18px;
-            font-weight: 600;
-          }
-        }
         .star_icon {
           width: 30px;
           height: 30px;
@@ -46,11 +33,6 @@
   .services_container {
     padding-top: 50px;
     .services_sub_container {
-      /* .services_header_container {
-        .header {
-          font-size: 32px;
-        }
-      } */
       .top_card_container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -60,12 +42,6 @@
         .services_header_star {
           .services_header {
             width: 60%;
-            p {
-              font-size: 16px;
-            }
-            h2 {
-              font-size: 28px;
-            }
           }
           .star_icon {
             width: 40px;
@@ -88,11 +64,6 @@
         grid-template-columns: repeat(4, 1fr);
       }
       .our_services {
-        .services_header_star {
-          .services_header {
-            width: 60%;
-          }
-        }
         .services_card_container {
           grid-template-columns: repeat(3, 1fr);
         }
@@ -106,6 +77,7 @@
     .services_sub_container {
       .our_services {
         .services_header_star {
+          margin-top: 100px;
           .services_header {
             width: 50%;
           }
@@ -117,15 +89,9 @@
 
 @media (min-width: 1400px) {
   .services_container {
+    padding-top: 140px;
     .services_sub_container {
       max-width: 1800px;
-      .our_services {
-        .services_header_star {
-          .services_header {
-            width: 50%;
-          }
-        }
-      }
     }
   }
 }

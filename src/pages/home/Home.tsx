@@ -2,6 +2,7 @@ import { about_us_group_image } from "../../assets/images/images";
 import AboutCard from "../../components/about-card/AboutCard";
 import BlogCard from "../../components/blog-card/BlogCard";
 import Card from "../../components/card/Card";
+import PageSubHeader from "../../components/page-sub-header/PageSubHeader";
 import TestimonialCard from "../../components/testimonial-card/TestimonialCard";
 import WhyUsSection from "../../components/why_use_section/WhyUsSection";
 import styles from "./home.module.css";
@@ -30,8 +31,11 @@ const Home = () => {
       </div>
       <div className={styles.body_wrapper}>
         <section className={styles.what_we_do_section}>
-          <p className={styles.header}>What we do</p>
-          <h2 className={styles.header_2}>We do it for children in need</h2>
+          <PageSubHeader
+            firstHeader={"What we do"}
+            secondHeader={"We do it for children in need"}
+            align="center"
+          />
           <div className={styles.card_container}>
             <Card />
             <Card />
@@ -40,10 +44,12 @@ const Home = () => {
         </section>
         <section className={styles.about_us}>
           <div className={styles.left}>
-            <p className={styles.header}>About Us</p>
-            <h2 className={styles.header_2}>
-              Building Brighter Future Through Compassionate Care and Support
-            </h2>
+            <PageSubHeader
+              firstHeader={"About Us"}
+              secondHeader={
+                "Building Brighter Future Through Compassionate Care and Support"
+              }
+            />
             <p className={styles.paragraph}>
               Bridge Bright Center is dedicated to empowering children with
               mental disabilities and behavioral challenges. Our passionate team
@@ -63,10 +69,12 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <WhyUsSection/>
+        <WhyUsSection />
         <section className={styles.testimonials}>
-          <p className={styles.header}>Testimonials</p>
-          <h2 className={styles.header_2}>Some Clients Feedback..</h2>
+          <PageSubHeader
+            firstHeader={"Testimonials"}
+            secondHeader={"Some Clients Feedback."}
+          />
           <div className={styles.testimonials_card_container}>
             <TestimonialCard />
             <TestimonialCard />
@@ -75,8 +83,10 @@ const Home = () => {
           </div>
         </section>
         <section className={styles.blog}>
-          <p className={styles.header}>Blog</p>
-          <h2 className={styles.header_2}>Explore Blogs and News</h2>
+          <PageSubHeader
+            firstHeader={"Blog"}
+            secondHeader={"Explore Blogs and News"}
+          />
           <div className={styles.blogs_card_container}>
             <BlogCard />
             <BlogCard />

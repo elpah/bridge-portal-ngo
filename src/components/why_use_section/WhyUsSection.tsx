@@ -1,4 +1,5 @@
 import { why_us_image } from "../../assets/images/images";
+import PageSubHeader from "../page-sub-header/PageSubHeader";
 import WhyCard from "../why_card/WhyCard";
 import styles from "./why-us-section.module.css";
 const WhyUsSection = () => {
@@ -11,8 +12,7 @@ const WhyUsSection = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <p className={styles.header}>Why Us</p>
-          <h2 className={styles.header_2}>Why Choose Bridge Bright Center</h2>
+          <PageSubHeader firstHeader={"Why Us"} secondHeader={"Why Choose Bridge Bright Center"}/>
           <p className={styles.paragraph}>
             Our passionate team provides personalized care, therapy, and
             educational support to help young minds thrive. We believe that with

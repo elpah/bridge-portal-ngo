@@ -7,7 +7,12 @@ const Contact = () => {
     <div className={styles.contact_container}>
       <div className={styles.text_form_wrapper}>
         <div className={styles.text_information}>
-          <PageHeader pageHead={"Contact Us"} pagePragraph={"Whether you’re looking to learn more about our services, need guidance on your child’s journey, or have suggestions to share, we’d love to hear from you!"}/>
+          <PageHeader
+            pageHead={"Contact Us"}
+            pagePragraph={
+              "Whether you’re looking to learn more about our services, need guidance on your child’s journey, or have suggestions to share, we’d love to hear from you!"
+            }
+          />
           <p className={styles.email}>info@bridgebrightcenter.com</p>
           <p className={styles.number}>+31 000 000 000</p>
 
@@ -72,7 +77,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
       <section className={styles.location_faq_container}>
         <div className={styles.location_faq_wrapper}>
           <div className={styles.location}>

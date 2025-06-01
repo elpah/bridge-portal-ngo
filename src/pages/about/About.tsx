@@ -7,6 +7,7 @@ import {
   vision_image_mobile,
 } from "../../assets/images/images";
 import AboutVisionCard from "../../components/about-vision-card/AboutVisionCard";
+import PageSubHeader from "../../components/page-sub-header/PageSubHeader";
 import TeamCard from "../../components/team-card/TeamCard";
 import styles from "./about.module.css";
 
@@ -81,10 +82,12 @@ const About = () => {
         </div>
       </div>
       <section className={styles.our_team_section}>
-        <p className={styles.our_team_header}>Our Team</p>
-        <h2 className={styles.our_team_header2}>
-          A Dedicated Team, Empowering Young Minds.
-        </h2>
+        <PageSubHeader
+          firstHeader={"Our Team"}
+          secondHeader={"A Dedicated Team, Empowering Young Minds."}
+        />
+        <p className={styles.our_team_header}></p>
+        <h2 className={styles.our_team_header2}></h2>
         <div className={styles.our_team_card_container}>
           <TeamCard />
           <TeamCard />

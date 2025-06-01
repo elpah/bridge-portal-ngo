@@ -90,6 +90,7 @@
 
 @media (min-width: 1400px) {
   .gallery_container {
+    padding-top: 140px;
     .gallery_wrapper {
       margin-bottom: 100px;
       max-width: 1800px;
