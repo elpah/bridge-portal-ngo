@@ -29,10 +29,12 @@
 	margin-top: 50px;
 	display: grid;
 	gap: 30px;
+	.blogs_pagination_container{
 	.blog_card_container{
 		display: grid;
 		gap: 20px;
 		
 	}
+}
   }
 }

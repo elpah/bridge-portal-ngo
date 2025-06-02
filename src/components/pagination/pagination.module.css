@@ -1,0 +1,28 @@
+@import "../../global.css";
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  .page {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    &.active {
+      background-color: var(--orange-color);
+      color: white;
+      border-color: var(--orange-color);
+      font-weight: bold;
+    }
+  }
+}
