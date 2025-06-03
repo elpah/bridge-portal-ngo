@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 import PageHeader from "../../components/page-header/PageHeader";
 import WhyCard from "../../components/why_card/WhyCard";
 import styles from "./contact.module.css";
 
 const Contact = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.contact_container}>
       <div className={styles.text_form_wrapper}>

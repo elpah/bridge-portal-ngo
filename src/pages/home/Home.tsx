@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { about_us_group_image } from "../../assets/images/images";
 import AboutCard from "../../components/about-card/AboutCard";
 import BlogCard from "../../components/blog-card/BlogCard";
@@ -8,6 +9,11 @@ import WhyUsSection from "../../components/why_use_section/WhyUsSection";
 import styles from "./home.module.css";
 
 const Home = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.home_container}>
       <div className={styles.cover}>

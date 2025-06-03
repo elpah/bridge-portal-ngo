@@ -1,12 +1,23 @@
+import { useEffect } from "react";
 import { gallery_image_placeholder } from "../../assets/images/images";
 import PageHeader from "../../components/page-header/PageHeader";
 import styles from "./gallery.module.css";
 
 const Gallery = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div className={styles.gallery_container}>
       <div className={styles.gallery_wrapper}>
-        <PageHeader pageHead={"Capturing Moments of Growth, Joy, and Connection."} pagePragraph={" At Bridge Bright Center, we believe in creating a positive, enriching environment where children can thrive. Our gallery showcases moments from our events, therapy sessions, and everyday life at the center—capturing the smiles, achievements, and sense of community that define who we are."}/>
+        <PageHeader
+          pageHead={"Capturing Moments of Growth, Joy, and Connection."}
+          pagePragraph={
+            " At Bridge Bright Center, we believe in creating a positive, enriching environment where children can thrive. Our gallery showcases moments from our events, therapy sessions, and everyday life at the center—capturing the smiles, achievements, and sense of community that define who we are."
+          }
+        />
       </div>
       <section className={styles.photos_section}>
         <div className={styles.photos_container}>

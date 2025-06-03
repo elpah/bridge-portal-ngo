@@ -14,12 +14,12 @@ import { FaPhone } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className={styles.footer_container_wrapper}>
+    <footer className={styles.footer_container_wrapper}>
       <div className={styles.footer_container_wrapper_2}>
         <div className={styles.footer_container}>
-          <div className={styles.logo_text_socials}>
+          <section className={styles.logo_text_socials}>
             <div className={styles.logo_container}>
-              <img src={logo} alt="Logo" />
+              <img src={logo} alt="Bridge Bright Center Logo" />
             </div>
             <div className={styles.paragraph_container}>
               <p className={styles.paragraph}>
@@ -39,64 +39,44 @@ const Footer = () => {
                 <img className={styles.social} src={fb_footer} alt="" />
               </div>
             </div>
-          </div>
-          <div className={styles.quick_links_container}>
+          </section>
+          <nav
+            className={styles.quick_links_container}
+            aria-label="Quick Links"
+          >
             <FooterHeader header={"Quick Links"} />
-
             <ul className={styles.links_container}>
-              <li>
-                <div className={styles.arrow_container}>
-                  <FaChevronRight className={styles.arrow} />
-                  <FaChevronRight className={styles.arrow} />
-                </div>
-                About Us
-              </li>
-              <li>
-                <div className={styles.arrow_container}>
-                  <FaChevronRight className={styles.arrow} />
-                  <FaChevronRight className={styles.arrow} />
-                </div>
-                Our Services
-              </li>
-              <li>
-                <div className={styles.arrow_container}>
-                  <FaChevronRight className={styles.arrow} />
-                  <FaChevronRight className={styles.arrow} />
-                </div>
-                Contact Us
-              </li>
-              <li>
-                <div className={styles.arrow_container}>
-                  <FaChevronRight className={styles.arrow} />
-                  <FaChevronRight className={styles.arrow} />
-                </div>
-                Gallery
-              </li>
-              <li>
-                <div className={styles.arrow_container}>
-                  <FaChevronRight className={styles.arrow} />
-                  <FaChevronRight className={styles.arrow} />
-                </div>
-                Testimonial
-              </li>
-              <li>
-                <div className={styles.arrow_container}>
-                  <FaChevronRight className={styles.arrow} />
-                  <FaChevronRight className={styles.arrow} />
-                </div>
-                Blog
-              </li>
+              {[
+                "About Us",
+                "Our Services",
+                "Contact Us",
+                "Gallery",
+                "Testimonial",
+                "Blog",
+              ].map((link) => (
+                <li key={link}>
+                  <a href="#" className={styles.link_item_wrapper}>
+                    <div className={styles.link_item}>
+                      <div className={styles.arrow_container}>
+                        <FaChevronRight className={styles.arrow} />
+                        <FaChevronRight className={styles.arrow} />
+                      </div>
+                      {link}
+                    </div>
+                  </a>
+                </li>
+              ))}
             </ul>
-          </div>
-          <div className={styles.recent_posts_container}>
+          </nav>
+          <section className={styles.recent_posts_container}>
             <FooterHeader header={"Recent Posts"} />
             <div className={styles.posts_cards_container}>
               <FooterRecentPostCard />
               <FooterRecentPostCard />
               <FooterRecentPostCard />
             </div>
-          </div>
-          <div className={styles.contact_us_container}>
+          </section>
+          <section className={styles.contact_us_container}>
             <FooterHeader header={"Contact Us"} />
             <div className={styles.footer_link_container}>
               <div className={styles.footer_link}>
@@ -123,7 +103,7 @@ const Footer = () => {
                 </p>
               </div>
             </form>
-          </div>
+          </section>
         </div>
       </div>
       <div className={styles.bottom_wrapper}>
@@ -132,7 +112,7 @@ const Footer = () => {
           <p>Privacy Policy | Terms of Service</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

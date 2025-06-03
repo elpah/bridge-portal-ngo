@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { star_image } from "../../assets/images/images";
 import Card from "../../components/card/Card";
 import PageHeader from "../../components/page-header/PageHeader";
@@ -5,7 +6,13 @@ import PageSubHeader from "../../components/page-sub-header/PageSubHeader";
 import ServicesTopCard from "../../components/services-top-card/ServicesTopCard";
 import WhyUsSection from "../../components/why_use_section/WhyUsSection";
 import styles from "./services.module.css";
+
 const Services = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className={styles.services_container}>
       <div className={styles.services_sub_container}>

@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import BlogCard from "../../components/blog-card/BlogCard";
 import Pagination from "../../components/pagination/Pagination";
+import Sidebar from "../../components/sidebar/Sidebar";
 import styles from "./blog.module.css";
+
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.blog_container}>
       <div className={styles.header_cover_container}>
@@ -23,11 +30,12 @@ const Blog = () => {
             <BlogCard />
           </div>
           <div className={styles.pagination_container}>
-            <Pagination/>
+            <Pagination />
           </div>
         </div>
-
-        <div className={styles.sidebar_container}></div>
+        <div className={styles.sidebar_container}>
+          <Sidebar />
+        </div>
       </div>
     </div>
   );

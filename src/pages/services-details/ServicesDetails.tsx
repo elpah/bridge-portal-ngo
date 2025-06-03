@@ -1,12 +1,18 @@
-import styles from "./services-details.module.css";
+import { useEffect } from "react";
 import {
   service_image_placeholder_mobile,
   service_image_placeholder_tablet,
   service_image_placeholder_desktop,
 } from "../../assets/images/images.ts";
 import PreFooter from "../../components/pre-footer/PreFooter.tsx";
+import styles from "./services-details.module.css";
 
 const ServicesDetails = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div className={styles.services_details_container}>
 		<div className={styles.services_details_container_wrapper}>

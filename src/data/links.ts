@@ -3,7 +3,6 @@ export type Link = {
   to: string;
 };
 
-
 export const links: Link[] = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about" },

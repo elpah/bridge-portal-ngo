@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "./pagination.module.css";
 
+import {HiOutlineArrowLeft,HiOutlineArrowRight } from "react-icons/hi";
+
 // create prop for total pages
 // determine number of pages by dividing total blog cards by number of blogs to show at a time
 const Pagination = ({ totalPages = 10 }) => {
@@ -36,7 +38,7 @@ const Pagination = ({ totalPages = 10 }) => {
           disabled={currentPage === 1}
           className={styles.page}
         >
-          Prev
+          <HiOutlineArrowLeft/>
         </button>
       )}
 
@@ -57,7 +59,7 @@ const Pagination = ({ totalPages = 10 }) => {
           disabled={currentPage === totalPages}
           className={styles.page}
         >
-          Next
+          <HiOutlineArrowRight/>
         </button>
       )}
     </div>

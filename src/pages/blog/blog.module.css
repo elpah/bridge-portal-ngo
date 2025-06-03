@@ -1,6 +1,7 @@
 @import "../../global.css";
 
 .blog_container {
+  margin-bottom: 100px;
   .header_cover_container {
     width: 100%;
     height: 200px;
@@ -22,19 +23,80 @@
       }
     }
   }
-  .blog_sidebar_container{
-	width: 90%;
-	margin: auto;
-	max-width: 1800px;
-	margin-top: 50px;
-	display: grid;
-	gap: 30px;
-	.blogs_pagination_container{
-	.blog_card_container{
-		display: grid;
-		gap: 20px;
-		
-	}
-}
+  .blog_sidebar_container {
+    width: 90%;
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    gap: 30px;
+    .blogs_pagination_container {
+      margin-bottom: 50px;
+      .blog_card_container {
+        display: grid;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
+
+@media (min-width: 768px) {
+  .blog_container {
+    /* margin-bottom: 100px; */
+    .header_cover_container {
+      height: 300px;
+      background-image: url("../../assets/images/cover_images/blog_cover_tablet.png");
+      .header_container {
+        .header {
+          font-size: 32px;
+        }
+      }
+    }
+    .blog_sidebar_container {
+      margin-top: 50px;
+      gap: 30px;
+      .blogs_pagination_container {
+        margin-bottom: 50px;
+        .blog_card_container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog_container {
+    /* margin-bottom: 100px; */
+    .header_cover_container {
+      height: 400px;
+      background-image: url("../../assets/images/cover_images/blog_cover_desktop.png");
+      .header_container {
+        .header {
+          /* font-size: 32px; */
+        }
+      }
+    }
+    .blog_sidebar_container {
+    
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      .blogs_pagination_container {
+        .blog_card_container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+
+

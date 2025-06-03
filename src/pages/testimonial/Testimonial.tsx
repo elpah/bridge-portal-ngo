@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import PageHeader from "../../components/page-header/PageHeader";
 import TestimonialCard from "../../components/testimonial-card/TestimonialCard";
 import styles from "./testimonial.module.css";
+
 const Testimonial = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.testimonials_container}>
       <PageHeader

@@ -2,21 +2,25 @@ import { Routes, Route } from "react-router-dom";
 import { Suspense } from "react";
 import Navbar from "./components/navbar/Navbar";
 import "./App.css";
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
 import Footer from "./components/footer/Footer";
-import Services from "./pages/services/Services";
-import Blog from "./pages/blog/Blog";
-import Contact from "./pages/contact/Contact";
-import Gallery from "./pages/gallery/Gallery";
-import Testimonial from "./pages/testimonial/Testimonial";
-import ServicesDetails from "./pages/services-details/ServicesDetails";
+import React from "react";
+
+import Home from "./pages/home/Home";
+const About = React.lazy(() => import("./pages/about/About"));
+const Services = React.lazy(() => import("./pages/services/Services"));
+const ServicesDetails = React.lazy(
+  () => import("./pages/services-details/ServicesDetails")
+);
+const Contact = React.lazy(() => import("./pages/contact/Contact"));
+const Gallery = React.lazy(() => import("./pages/gallery/Gallery"));
+const Testimonial = React.lazy(() => import("./pages/testimonial/Testimonial"));
+const Blog = React.lazy(() => import("./pages/blog/Blog"));
+const NotFound = React.lazy(() => import("./pages/not-found/NotFound"));
 
 function App() {
   return (
     <div className="app-container">
       <Navbar />
-
       <div className="content">
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
@@ -28,10 +32,10 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </div>
-
       <Footer />
     </div>
   );
