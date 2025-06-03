@@ -2,15 +2,17 @@ import { useEffect } from "react";
 import PageHeader from "../../components/page-header/PageHeader";
 import WhyCard from "../../components/why_card/WhyCard";
 import styles from "./contact.module.css";
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
-  
+  const location = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [location]);
 
   return (
-    <div className={styles.contact_container}>
+    <main className={styles.contact_container}>
       <div className={styles.text_form_wrapper}>
         <div className={styles.text_information}>
           <PageHeader
@@ -48,7 +50,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className={styles.form_container}>
+        <section className={styles.form_container}>
           <form className={styles.form}>
             <h2 className={styles.form_header}>Get in Touch</h2>
             <p className={styles.form_paragraph}>You can reach us anytime</p>
@@ -81,7 +83,7 @@ const Contact = () => {
               <span className={styles.terms_privacy}>Privacy Policy</span>
             </p>
           </form>
-        </div>
+        </section>
       </div>
       <section className={styles.location_faq_container}>
         <div className={styles.location_faq_wrapper}>
@@ -112,7 +114,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

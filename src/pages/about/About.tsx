@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
   about_cover_desktop,
   about_cover_mobile,
@@ -13,13 +14,13 @@ import TeamCard from "../../components/team-card/TeamCard";
 import styles from "./about.module.css";
 
 const About = () => {
-
+const location = useLocation();
     useEffect(() => {
       window.scrollTo(0, 0);
-    }, []);
+    }, [location]);
     
   return (
-    <div className={styles.about_container}>
+    <main className={styles.about_container}>
       <div className={styles.header_cover_container}>
         <h2 className={styles.about_header_1}>Our Story, Vision, </h2>
         <h2 className={styles.about_header}>and Values.</h2>
@@ -105,7 +106,7 @@ const About = () => {
           <TeamCard />
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

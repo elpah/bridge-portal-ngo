@@ -70,8 +70,6 @@
     }
 
     .body_container {
-      .card_header {
-      }
       .card_text {
         display: none;
       }

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { about_us_group_image } from "../../assets/images/images";
 import AboutCard from "../../components/about-card/AboutCard";
 import BlogCard from "../../components/blog-card/BlogCard";
@@ -9,14 +10,14 @@ import WhyUsSection from "../../components/why_use_section/WhyUsSection";
 import styles from "./home.module.css";
 
 const Home = () => {
-  
+  const location = useLocation;
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [location]);
 
   return (
-    <div className={styles.home_container}>
-      <div className={styles.cover}>
+    <main className={styles.home_container}>
+      <section className={styles.cover}>
         <div className={styles.cover_elements_wrapper}>
           <h1 className={styles.header}>
             Where Compassion Meets Growth: Transforming Lives Through{" "}
@@ -34,7 +35,7 @@ const Home = () => {
             Schedule A Consultation
           </button>
         </div>
-      </div>
+      </section>
       <div className={styles.body_wrapper}>
         <section className={styles.what_we_do_section}>
           <PageSubHeader
@@ -101,7 +102,7 @@ const Home = () => {
           </div>
         </section>
       </div>
-    </div>
+    </main>
   );
 };
 

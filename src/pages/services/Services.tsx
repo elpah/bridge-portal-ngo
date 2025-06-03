@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { star_image } from "../../assets/images/images";
 import Card from "../../components/card/Card";
 import PageHeader from "../../components/page-header/PageHeader";
@@ -8,13 +9,14 @@ import WhyUsSection from "../../components/why_use_section/WhyUsSection";
 import styles from "./services.module.css";
 
 const Services = () => {
+  const location = useLocation();
 
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
-    <div className={styles.services_container}>
+    <main className={styles.services_container}>
       <div className={styles.services_sub_container}>
         <PageHeader
           pageHead={"Building Brighter Futures, One Child at a Time"}
@@ -22,12 +24,12 @@ const Services = () => {
             "At Bridge Bright Center, we offer a comprehensive range of services designed to support children with mental disabilities and behavioral challenges. Our goal is to help children develop essential skills, build resilience, and thrive in a supportive and inclusive environment."
           }
         />
-        <div className={styles.top_card_container}>
+        <section className={styles.top_card_container}>
           <ServicesTopCard />
           <ServicesTopCard />
           <ServicesTopCard />
           <ServicesTopCard />
-        </div>
+        </section>
         <section className={styles.our_services}>
           <div className={styles.services_header_star}>
             <div className={styles.services_header}>
@@ -56,7 +58,7 @@ const Services = () => {
         </section>
       </div>
       <WhyUsSection />
-    </div>
+    </main>
   );
 };
 
