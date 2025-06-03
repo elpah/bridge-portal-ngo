@@ -1,4 +1,5 @@
-import { arrow, mission_icon } from "../../assets/images/images";
+import {mission_icon } from "../../assets/images/images";
+import ReadMore from "../read-more-button/ReadMore";
 import styles from "./about-card.module.css";
 
 const AboutCard = () => {
@@ -13,10 +14,12 @@ const AboutCard = () => {
         We do this by providing compassionate, individualized services that
         nurture growth, resilience, and confidence.
       </p>
-      <button>
-        Read More
-        <img src={arrow} alt="arror" />
-      </button>
+      <ReadMore
+        hoverColor="#fff"
+        color="#fff"
+        backgroundColor="#46af3f"
+        hoverBackgroundColor=" #46af3f"
+      />
     </div>
   );
 };

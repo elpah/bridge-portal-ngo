@@ -55,11 +55,11 @@ const MobileNav = ({ links, handleLogoClick }: INavProps) => {
 
             <ul>
               {links.map(({ label, to }) => (
-                <li onClick={() => setIsOpen(false)} key={to}>
-                  <NavLink to={to} className={styles.nav_link}>
+                <NavLink to={to} className={styles.nav_link}>
+                  <li onClick={() => setIsOpen(false)} key={to}>
                     {label}
-                  </NavLink>
-                </li>
+                  </li>
+                </NavLink>
               ))}
             </ul>
             <div className={styles.button_container}>

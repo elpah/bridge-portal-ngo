@@ -3,12 +3,12 @@ import type { CSSProperties } from "react";
 
 type FooterHeaderProps = {
   header: string;
-  color?: CSSProperties["color"]; // Text color
+  color?: CSSProperties["color"];
 };
 
 const FooterHeader = ({
   header,
-  color = "white", // default text color
+  color = "white",
 }: FooterHeaderProps) => {
   return (
     <div className={styles.header_container}>

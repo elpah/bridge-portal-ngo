@@ -12,9 +12,9 @@
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     .arrow {
-      transition: all 0.2s ease;
+      transition: all 0.3s ease;
     }
 
     h2 {
@@ -26,7 +26,7 @@
   .para_container {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease, padding 0.2s ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
     padding: 0;
     p {
       font-size: 12px;
