@@ -9,7 +9,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
+    
     .cover_elements_wrapper {
       width: 90%;
       margin: 2rem auto;
