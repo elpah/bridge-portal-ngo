@@ -1,0 +1,212 @@
+@import "../../global.css";
+.blog_details_container {
+  padding-top: 40px;
+  width: 90%;
+  margin: auto;
+  max-width: 1800px;
+  color: var(--dark-color);
+
+  .body_container {
+    .image_container {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .header {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    hr {
+      background-color: #bbb;
+      border: none;
+      height: 0.5px;
+      margin-bottom: 30px;
+    }
+    .paragraph {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .optional_image_container {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    ul {
+      padding-left: 20px;
+      box-sizing: content-box;
+      margin-bottom: 30px;
+      li {
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 1px;
+      }
+    }
+    .related_posts_section {
+      margin-bottom: 40px;
+      .related_header {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      .blogs_card_container {
+        display: grid;
+        gap: 20px;
+      }
+    }
+    .comment_section {
+      margin-bottom: 40px;
+
+      .comment_header_container {
+        margin-bottom: 30px;
+
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        img {
+          height: 25px;
+          width: 25px;
+        }
+        .comment_header {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      .comment_cards_container {
+      }
+    }
+    .leave_comment_section {
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .blog_details_container {
+    padding-top: 40px;
+
+    .body_container {
+      .image_container {
+        height: 300px;
+      }
+      .header {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+      hr {
+        margin-bottom: 40px;
+      }
+      .paragraph {
+        line-height: 1.8;
+      }
+
+      .optional_image_container {
+        height: 250px;
+      }
+      ul {
+        padding-left: 40px;
+        margin-bottom: 30px;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+      .related_posts_section {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        .related_header {
+          font-size: 24px;
+        }
+        .blogs_card_container {
+          display: grid;
+          gap: 20px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .comment_section {
+        margin-bottom: 70px;
+
+        .comment_header_container {
+          margin-bottom: -5px;
+          .comment_header {
+            font-size: 24px;
+          }
+        }
+        .comment_cards_container {
+        }
+      }
+      .leave_comment_section {
+        margin-bottom: 100px;
+
+        h2 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog_details_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog_details_container {
+    .body_container {
+      .paragraph {
+        font-size: 16px;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .blog_details_container {
+    padding-top: 150px;
+    grid-template-columns: 5fr 2fr;
+
+    .body_container {
+      .image_container {
+        height: 400px;
+      }
+      .related_posts_section {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        .blogs_card_container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}

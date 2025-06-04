@@ -15,6 +15,10 @@ const Contact = React.lazy(() => import("./pages/contact/Contact"));
 const Gallery = React.lazy(() => import("./pages/gallery/Gallery"));
 const Testimonial = React.lazy(() => import("./pages/testimonial/Testimonial"));
 const Blog = React.lazy(() => import("./pages/blog/Blog"));
+const BlogDetails = React.lazy(
+  () => import("./pages/blog-details/BlogDetails")
+);
+
 const NotFound = React.lazy(() => import("./pages/not-found/NotFound"));
 
 function App() {
@@ -32,6 +36,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog-details" element={<BlogDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
