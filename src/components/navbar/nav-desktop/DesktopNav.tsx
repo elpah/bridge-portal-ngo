@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import type { INavProps } from "../../types/navProps";
 import { logo } from "../../../assets/images/images";
@@ -20,7 +20,6 @@ const DesktopNav = ({ links, handleLogoClick }: INavProps) => {
       setIsScrolling(scrollY > 100);
       setHideNav(scrollY > 500);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
